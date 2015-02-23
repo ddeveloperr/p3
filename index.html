@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Simple ddeveloperr's blog</title>
+  <meta name="description" content="Simple ddeveloperr's blog demo">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="ddeveloperr@gmail.com">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+  <style>
+    header {
+      text-align: center;
+      background: url('http://i.imgur.com/DpgAxgM.jpg');
+      background-size: cover;
+      color: white;
+    }
+    body {
+      background: #F5F5DC;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 0px solid white;
+      border-radius: 20px;
+      height=22px;
+      width=22px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      body {
+        background: red;
+      }
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <img src="http://i.imgur.com/jtqOVos.png">
+    <h1>Simple ddeveloperr's blog</h1>
+    <ul>
+      <li><a href="#">About Me</a>
+      </li>
+      <li><a href="#">Projects</a>
+      </li>
+      <li><a href="#">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <article>
+    <h2>Simple blog demo</h2>
+    <p>Here I built a responsive blog theme using media query to create a responsive design, using advanced colors with hex and RGBA and learned how to listen for events and react with Javascript.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>JavaScript</h2>
+    <p>JavaScript is the programming language of the Web. All modern HTML pages are using JavaScript. JavaScript is easy to learn.
+    </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>jQuery</h2>
+    <p>jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>CSS Media Query</h2>
+    <p>Is technique that allows us to set CSS styles that only activate when the browser is a certain width.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("You are Clicked! Thanks,");
+    });
+  </script>
+</body>
